@@ -1,0 +1,35 @@
+{
+  "name": "starknet-token-factory-scripts",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:contracts": "scarb build",
+    "declare:token": "tsx scripts/declare_token.ts",
+    "declare:factory": "tsx scripts/declare_factory.ts",
+    "deploy:factory": "tsx scripts/deploy_factory.ts",
+    "create:token": "tsx scripts/create_token.ts",
+    "interact:token": "tsx scripts/interact_token.ts",
+    "deploy:privacy": "tsx scripts/deploy_privacy.ts",
+    "link:privacy": "tsx scripts/link_privacy.ts"
+  },
+  "dependencies": {
+    "dotenv": "^16.6.1",
+    "starknet": "^7.6.4"
+  },
+  "devDependencies": {
+    "@types/node": "^22.19.17",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.19.4",
+    "typescript": "^5.9.3"
+  },
+  "description": "Project scaffold initialized from the master guide.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
